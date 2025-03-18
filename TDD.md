@@ -98,3 +98,5 @@ Requerimientos de hardware:
 •	Audifonos o Bocinas
 •	Grafica
 •	Disco duro
+
+Este documento ira cambiando mediante el avance del proyecto
