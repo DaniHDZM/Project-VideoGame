@@ -1,0 +1,111 @@
+[gd_scene load_steps=10 format=3 uid="uid://lrmuf73t1ies"]
+
+[ext_resource type="Script" uid="uid://gie76y1cdy8r" path="res://scripts/menu.gd" id="1_mae5d"]
+[ext_resource type="Texture2D" uid="uid://d3ex78yhrufyt" path="res://Portada.jpeg" id="1_ouk20"]
+[ext_resource type="FontFile" uid="uid://b77alk8af3chu" path="res://enchanted_land/Enchanted Land.otf" id="2_mae5d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+bg_color = Color(0, 0.713001, 0.441828, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+bg_color = Color(0, 0.447059, 0.270588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+bg_color = Color(0, 0.713726, 0.443137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
+bg_color = Color(0, 0.447059, 0.270588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kk3ma"]
+bg_color = Color(0, 0.713726, 0.443137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrnbx"]
+bg_color = Color(0, 0.448134, 0.271033, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mae5d")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.791035, 0.999123, 0.911275, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ouk20")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -139.0
+offset_top = -221.0
+offset_right = 139.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Jugar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ytr4m")
+text = "Jugar"
+
+[node name="Opciones" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_l48gv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ecwwl")
+text = "Opciones"
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_kk3ma")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nrnbx")
+text = "Salir"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -47.0
+offset_right = 178.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(5.10186e-06, 0.819533, 0.114407, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 80
+text = "El reino del vacio"
+horizontal_alignment = 1
+vertical_alignment = 1
